@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "sage-ncd-risk-transformer"
+version = "0.1.0"
+description = "Transformer-based non-communicable disease risk stratification using longitudinal IHME GBD (47M rows"
+authors = [{name = "Kaushik Sarkar", email = "dr.kaushiks@hotmail.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
